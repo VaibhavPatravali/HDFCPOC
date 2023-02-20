@@ -1,0 +1,5 @@
+<div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <mat-tab-group mat-align-tabs="start" *ngFor="let tab  of page.common.currentTabsArray">
+    <mat-tab label="{{tab.tabName}}"><button mat-raised-button style="margin-top:30px" (click)="goToNextStep()">Raised Button</button></mat-tab>
+  </mat-tab-group>
+</div>

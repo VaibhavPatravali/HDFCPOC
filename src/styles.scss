@@ -1,0 +1,12 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+
+.pointer-none{
+    pointer-events:none
+}
+
+.mat-step-header {
+  pointer-events: none !important;
+}

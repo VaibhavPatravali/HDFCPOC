@@ -1,0 +1,14 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+    <mat-horizontal-stepper [linear]="true" [selectedIndex]="page.common.stepNumber" (selectionChange)="seletedStep($event)">
+      <mat-step *ngFor="let step of page.common.stepperList">
+        <div>
+          <ng-template matStepLabel>{{step.tabName}}</ng-template>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+      <bh-tabs></bh-tabs>
+    </div>
+  </div>
+</div>
